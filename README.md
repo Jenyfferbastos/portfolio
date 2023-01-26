@@ -10,6 +10,10 @@
 ## API Used
 
 - `Commit convention`: Commitlint
+- `Font`: Google Fonts (Poppins)
+
+## Libs
+- `Icons`: Boxicons and Unicons
 
 ## Running locally
 
