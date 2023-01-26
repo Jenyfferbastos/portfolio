@@ -1,0 +1,164 @@
+/*==============  Google fonts =============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap");
+
+/*============== Variables  ===============*/
+:root {
+  /*============= Pallet colors =============*/
+  --color-title-dark: #36384d;
+  --color-title: #574d61;
+  --color-text: #121622;
+  --color-secondary: #886881;
+  --color-primary: #cb98ae;
+  --color-container: #e8cad5;
+
+  /*========== Font and typography ==========*/
+  --font-body: "Poppins", sans-serif;
+
+  --font-size-xl: 3.5rem;
+  --font-size-h1: 2.25rem;
+  --font-size-h2: 1.5rem;
+  --font-size-h3: 1.25rem;
+  --font-size-l: 1rem;
+  --font-size-m: 0.875rem;
+  --font-size-s: 0.813rem;
+  --font-size-xs: 0.625rem;
+
+  /*============= Font weight ==============*/
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
+
+/*======== Responsive typography =========*/
+
+@media screen and (max-width: 992px) {
+  :root {
+    --font-size-xl: 2.27rem;
+    --font-size-h1: 1.5rem;
+    --font-size-h2: 1.25rem;
+    --font-size-h3: 1rem;
+    --font-size-l: 0.938rem;
+    --font-size-m: 0.813rem;
+    --font-size-s: 0.75rem;
+  }
+}
+
+/*=============== Pattern ===============*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--font-body);
+  font-size: var(--font-size-l);
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+h1, h2, h3 {
+  color: var(--color-title);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*============= Reusable =============*/
+
+.section{
+  padding: 6rem 0 2rem;
+}
+
+.section-title{
+  font-size: var(--font-size-h1);
+  color: var(--color-title);
+}
+
+.section-subtitle{
+  display: block;
+  font-size: var(--font-size-m);
+  margin-bottom: 4rem;
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+/*============= Layout =============*/
+
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*============= Buttons =============*/
+
+.button {
+  display: inline-block;
+  background-color: var(--color-title);
+  color: var(--color-container);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover {
+  background-color: var(--color-title-dark);
+}
+
+.button-icon{
+  margin-left: 0.5rem;
+}
+
+.button-flex{
+  display: inline-flex;
+  align-items: center;
+}
+
+/*============= Breakpoints =============*/
+
+/*========== For large devices ==========*/
+@media screen and (max-width: 992px) {
+}
+
+/*========= For medium devices ==========*/
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/*========== For small devices ==========*/
+@media screen and (max-width: 350px) {
+}
