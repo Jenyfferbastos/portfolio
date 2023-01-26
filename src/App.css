@@ -8,7 +8,7 @@
   --color-title: #574d61;
   --color-text: #121622;
   --color-secondary: #886881;
-  --color-primary: #cb98ae;
+  --color-primary: #ebd0da;
   --color-container: #e8cad5;
 
   /*========== Font and typography ==========*/
@@ -44,7 +44,7 @@
 }
 
 /*=============== Pattern ===============*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -63,7 +63,9 @@ body {
   color: var(--color-text);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--color-title);
   font-weight: var(--font-semi-bold);
 }
@@ -72,7 +74,7 @@ ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -82,23 +84,23 @@ button {
   outline: none;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 
 /*============= Reusable =============*/
 
-.section{
+.section {
   padding: 6rem 0 2rem;
 }
 
-.section-title{
+.section-title {
   font-size: var(--font-size-h1);
   color: var(--color-title);
 }
 
-.section-subtitle{
+.section-subtitle {
   display: block;
   font-size: var(--font-size-m);
   margin-bottom: 4rem;
@@ -117,7 +119,7 @@ img{
   margin-right: auto;
 }
 
-.grid{
+.grid {
   display: grid;
   gap: 1.5rem;
 }
@@ -137,11 +139,11 @@ img{
   background-color: var(--color-title-dark);
 }
 
-.button-icon{
+.button-icon {
   margin-left: 0.5rem;
 }
 
-.button-flex{
+.button-flex {
   display: inline-flex;
   align-items: center;
 }
@@ -150,6 +152,10 @@ img{
 
 /*========== For large devices ==========*/
 @media screen and (max-width: 992px) {
+  .container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
 }
 
 /*========= For medium devices ==========*/
@@ -161,4 +167,8 @@ img{
 
 /*========== For small devices ==========*/
 @media screen and (max-width: 350px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
