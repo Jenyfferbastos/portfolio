@@ -1,12 +1,15 @@
-import React from 'react';
-import './App.css';
-import { Header } from './components/header/Header';
+import React from "react";
+import "./App.css";
+import { Header } from "./components/header/Header";
+import { Home } from "./components/home/Home";
 
 export function App() {
-
   return (
     <>
-    <Header />
+      <Header />
+      <main className="main">
+        <Home />
+      </main>
     </>
-  )
+  );
 }
