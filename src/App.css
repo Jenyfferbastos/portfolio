@@ -133,6 +133,7 @@ img {
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
+  margin-bottom: 2.5rem;
 }
 
 .button:hover {
@@ -158,10 +159,18 @@ img {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
 }
 
 /*========= For medium devices ==========*/
 @media screen and (max-width: 768px) {
+  .section {
+    padding: 2rem 0 4rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -169,8 +178,12 @@ img {
 
 /*========== For small devices ==========*/
 @media screen and (max-width: 350px) {
+  :root {
+    --font-size-xl: 2.25rem;
+  }
   .container {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+
 }
